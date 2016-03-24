@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#faf5e4"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text="Version 1.0"
+            android:paddingTop="15dp"
+            android:textColor="?android:attr/textColorPrimary"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:id="@+id/about_version" />
+
+        <ImageView
+            android:layout_width="148dp"
+            android:layout_height="125dp"
+            android:id="@+id/about_logo"
+            android:paddingTop="20dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/keren_or_logo" />
+
+        <TextView
+            android:id="@+id/about_credits"
+            android:layout_width="339dp"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:paddingTop="20dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Created by Or Amit and Keren Yakov"
+            android:textColor="?android:attr/textColorPrimary" />
+
+        <TextView
+            android:id="@+id/about_rights"
+            android:layout_width="339dp"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:paddingTop="10dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="All rights reserved"
+            android:textColor="?android:attr/textColorPrimary" />
+
+        <TextView
+        android:layout_width="157dp"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:paddingTop="10dp"
+        android:paddingBottom="20dp"
+        android:text="March 2016"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:textColor="?android:attr/textColorPrimary"
+        android:id="@+id/about_date" />
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
+    <!--android:text="@string/app_credits"-->
+

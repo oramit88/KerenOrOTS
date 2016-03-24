@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="il.ac.shenkar.kerenor.tasksapp.Activities.CreateEditTeamActivity">
+
+
+    <include layout="@layout/toolbar_general_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+    <android.support.design.widget.CoordinatorLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="false"
+        android:id="@+id/linearLayout4"
+        android:layout_marginTop="90dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:weightSum="1"
+        android:layout_alignParentBottom="true">
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/team_name_layout">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Team Name :"
+                android:id="@+id/manage_team_team_name_text" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/team_name_field" />
+        </LinearLayout>
+
+
+    </android.support.design.widget.CoordinatorLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:id="@+id/linearLayout6"
+        android:layout_alignTop="@+id/linearLayout4"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="48dp"
+        android:weightSum="1">
+
+        <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="260dp"
+        android:layout_height="80dp"
+        android:id="@+id/team_member_layout"
+        android:layout_marginLeft="16dp"
+            android:layout_weight="0.01">
+
+
+         <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:id="@+id/team_member_email_layout">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="E-Mail :"
+                android:id="@+id/create_team_email_text" />
+
+            <EditText
+                android:layout_width="214dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/create_team_email_field"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:id="@+id/team_member_phone_layout">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Phone :"
+                android:id="@+id/create_team_phone_text" />
+
+            <EditText
+                android:layout_width="214dp"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:id="@+id/create_team_phone_field"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        </LinearLayout>
+
+        </LinearLayout>
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            app:elevation="4dp"
+            android:src="@drawable/ic_add_member"
+            android:scaleType="center"
+            android:id="@+id/create_team_add_member_button"
+            android:gravity="bottom|right"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="5dp">
+
+        </android.support.design.widget.FloatingActionButton>
+
+
+    </LinearLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:orientation="vertical"
+        android:layout_width="353dp"
+        android:layout_height="265dp"
+        android:scrollbars="vertical"
+        android:id="@+id/team_members_container"
+        android:layout_alignLeft="@+id/linearLayout6"
+        android:layout_alignStart="@+id/linearLayout6"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_below="@+id/linearLayout6"
+        android:layout_marginTop="16dp" />
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:elevation="4dp"
+        android:src="@drawable/ic_v_done"
+        android:scaleType="center"
+        android:id="@+id/add_members_list_done_button"
+        android:layout_gravity="right"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp">
+    </android.support.design.widget.FloatingActionButton>
+
+
+</RelativeLayout>

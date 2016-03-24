@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/interval_item"
+    android:textColor="@color/textColorPrimary"
+    android:padding="10sp"
+    android:layout_width="fill_parent"
+    android:singleLine="true"
+    android:background="#faf5e4"
+    android:gravity="left"
+    android:layout_height="fill_parent"/>

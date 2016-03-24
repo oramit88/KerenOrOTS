@@ -1,0 +1,81 @@
+{
+  "project_info": {
+    "project_id": "kerenorots",
+    "project_number": "216635393822",
+    "name": "KerenOrOTS"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:216635393822:android:35341a4c34deca8b",
+        "client_id": "android:com.example.kerenx.tasksapp",
+        "client_type": 1,
+        "android_client_info": {
+          "package_name": "com.example.kerenx.tasksapp",
+          "certificate_hash": []
+        }
+      },
+      "oauth_client": [],
+      "api_key": [],
+      "services": {
+        "analytics_service": {
+          "status": 2,
+          "analytics_property": {
+            "tracking_id": "UA-75472911-1"
+          }
+        },
+        "cloud_messaging_service": {
+          "status": 1,
+          "apns_config": []
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "google_signin_service": {
+          "status": 1
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:216635393822:android:0cfcdf9fdfab0f7f",
+        "client_id": "android:il.ac.shenkar.kerenor.tasksapp",
+        "client_type": 1,
+        "android_client_info": {
+          "package_name": "il.ac.shenkar.kerenor.tasksapp",
+          "certificate_hash": []
+        }
+      },
+      "oauth_client": [],
+      "api_key": [],
+      "services": {
+        "analytics_service": {
+          "status": 2,
+          "analytics_property": {
+            "tracking_id": "UA-75472911-1"
+          }
+        },
+        "cloud_messaging_service": {
+          "status": 1,
+          "apns_config": []
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "google_signin_service": {
+          "status": 1
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "client_info": [],
+  "ARTIFACT_VERSION": "1"
+}

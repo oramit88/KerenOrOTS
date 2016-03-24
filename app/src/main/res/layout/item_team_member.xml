@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="13dp"
+        android:background="#faf5e4"
+        android:weightSum="1">
+
+        // chose my own color !
+        <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+            android:layout_marginTop="0dp"
+        android:id="@+id/team_member_instance"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="0dp"
+            android:layout_alignParentTop="true">
+
+            <!--<View-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="1dp"-->
+                <!--android:layout_marginBottom="10dp"-->
+                <!--android:background="#3F51B5" />-->
+
+            <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:id="@+id/team_member_email_layout"
+                android:layout_marginTop="5dp">
+
+
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="E-Mail :"
+            android:layout_marginLeft="4dp"
+            android:id="@+id/create_team_email_text" />
+
+            <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/create_team_email_field"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_weight="0.31" />
+
+            </LinearLayout>
+
+            <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:id="@+id/team_member_phone_layout"
+                android:layout_marginBottom="5dp">
+
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Phone :"
+            android:layout_marginLeft="4dp"
+            android:id="@+id/create_team_phone_text" />
+
+            <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:id="@+id/create_team_phone_field"
+            android:layout_weight="0.71"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:id="@+id/manage_team_member_image"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignBottom="@+id/team_member_instance"
+            android:layout_marginRight="25dp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

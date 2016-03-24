@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">KerenOr OTS</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="report_title">Report Task Status</string>
+    <string name="create_task_title">Create / Edit Task</string>
+    <string name="create_task_team">Create / Edit Team</string>
+
+
+
+
+
+</resources>
